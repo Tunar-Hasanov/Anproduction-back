@@ -4,7 +4,8 @@
   "description": "Admin Panel",
   "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "npm run build"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
