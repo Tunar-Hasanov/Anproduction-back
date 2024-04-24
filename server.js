@@ -174,7 +174,7 @@ app.post('/admin/login', async (req, res) => {
   }
 });
 
-app.post('/register',authenticateUser, async (req, res) => {
+app.post('/register', async (req, res) => {
   const { username, password } = req.body;
 
   try {
