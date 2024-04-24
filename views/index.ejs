@@ -38,20 +38,19 @@
 
     <li class="treeview is-expanded">
       <a class="app-menu__item" href="#" data-toggle="treeview">
-        <i class="app-menu__icon bi bi-plus-circle"></i><span class="app-menu__label">Mal Əlavə et</span><i class="treeview-indicator bi bi-chevron-right"></i>
+        <i class="app-menu__icon bi bi-plus-circle"></i><span class="app-menu__label">Test əlavə et</span><i class="treeview-indicator bi bi-chevron-right"></i>
       </a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item active" href="/add/product"><i class="icon bi bi-plus-circle"></i>Mal Əlavə et</a></li>
+        <li><a class="treeview-item active" href="/add/product"><i class="icon bi bi-plus-circle"></i>test əlavə et</a></li>
       </ul>
     </li>
 
     <li class="treeview">
       <a class="app-menu__item" href="#" data-toggle="treeview">
-        <i class="app-menu__icon bi bi-table"></i><span class="app-menu__label">Sifariş Tablosu</span><i class="treeview-indicator bi bi-chevron-right"></i>
+        <i class="app-menu__icon bi bi-table"></i><span class="app-menu__label">Bal Tablosu</span><i class="treeview-indicator bi bi-chevron-right"></i>
       </a>
       <ul class="treeview-menu">
-        <li><a class="treeview-item" href="/orders/admin"><i class="icon bi bi-table"></i><i class="bi bi-cart3"></i>Sifariş Tablosu</a></li>
-        <li><a class="treeview-item" href="/read-orders"><i class="icon bi bi-check-circle"></i>Oxunmuş Sifarişlər Tablosu</a></li>
+        <li><a class="treeview-item" href="/orders/admin"><i class="icon bi bi-table"></i><i class="bi bi-cart3"></i>Ballar tablosu</a></li>
       </ul>
     </li>
 
@@ -74,7 +73,7 @@
         <ul class="app-breadcrumb breadcrumb">
           <li class="breadcrumb-item"><i class="bi bi-house-door fs-6"></i></li>
           <li class="breadcrumb-item">Mal əlavə</li>
-          <li class="breadcrumb-item"><a href="#">Mal Əlavə Etmək üçün əlavələr</a></li>
+          <li class="breadcrumb-item"><a href="#">test əlavə etmək</a></li>
         </ul>
       </div>
       <div class="row">
@@ -85,18 +84,18 @@
                 <div class="mb-3">
                   <h4>Mal Əlavə et</h4>
                   <form action="/upload" method="POST" enctype="multipart/form-data">
-                    <label class="form-label" for="productName">Mal Adı:</label>
+                    <label class="form-label" for="productName">sual Adı:</label>
                     <input class="form-control" id="productName" type="text" name="name" required>
                 
-                    <label class="form-label" for="productDescription">Mal Təsviri:</label>
+                    <label class="form-label" for="productDescription">sual Təsviri:</label>
                     <textarea class="form-control" id="productDescription" name="description" required></textarea>
                     <label class="form-check-label" for="trend">Trend Mal:</label>
                     <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="trend" name="trend" value="true" <% if (products.trend) { %> Trend Mal: checked<% } %>>
+                      <input class="form-check-input" type="checkbox" id="trend" name="trend" value="true" <% if (products.trend) { %> açıq sual: checked<% } %>>
                     </div>
                     <label for="New">Yeni Mal:</label>
                     <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="New" name="New" value="true"  <% if (products.trend) { %> Trend Mal: checked<% } %>>
+                    <input class="form-check-input" type="checkbox" id="New" name="New" value="true"  <% if (products.trend) { %> birdən çox cavab: checked<% } %>>
                     </div>
                     <label class="form-label" for="productCategory">Kategoriya:</label>
                     <select class="form-control" id="productCategory" name="categoryId" required>
@@ -105,7 +104,7 @@
                       <% }); %>
                     </select>
                 
-                    <label class="form-label" for="productImage">Mal Üçün Rəsim:</label>
+                    <label class="form-label" for="productImage">sual Üçün Rəsim:</label>
                     <input class="form-control" id="productImage" type="file" name="image" accept="image/*" required>
                 
                     <button type="submit" class="btn btn-primary">Əlavə et</button>
