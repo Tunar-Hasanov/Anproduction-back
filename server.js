@@ -16,7 +16,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const app = express();
 
-mongoose.connect('mongodb+srv://TunarHasanov:15DRC9WAoP9gB6EP@cluster0.cww9k88.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://hasanovtunar2008:MHFrOUws9zbVCap9 @cluster0.egthbec.mongodb.net/?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   tls: true,
